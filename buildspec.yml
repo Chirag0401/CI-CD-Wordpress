@@ -18,3 +18,7 @@ phases:
     post_build:
             commands:
                     - echo build complete.
+artifacts:
+    files:
+        - '**/*'
+    name: my-webapp-artifacts
