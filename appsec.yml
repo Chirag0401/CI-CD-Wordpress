@@ -6,10 +6,10 @@ files:
 
 hooks:
   ApplicationStop:
-    - location: scripts/stopserver.sh
+    - location: Scripts/stopserver.sh
       timeout: 50
   AfterInstall:
-    - location: scripts/permission.sh
+    - location: Scripts/permission.sh
   ApplicationStart:
-    - location: scripts/startserver.sh
+    - location: Scripts/startserver.sh
       timeout: 50
