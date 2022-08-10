@@ -19,6 +19,5 @@ phases:
             commands:
                     - echo build complete.
 artifacts:
-    files:
-        - '**/*'
-    name: my-webapp-artifacts
+        files:
+           - '**/*'
