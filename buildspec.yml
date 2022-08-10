@@ -1,12 +1,5 @@
 version: 0.2
 
-env:
-   parameter-store:
-           DB_USER: "/chirag/DB_USER"
-           DB_PASSWORD: "/chirag/DB_PASSWORD"
-           DB_HOST: "/chirag/DB_HOST"
-           DB_NAME: "/chirag/DB_NAME"
-
 phases:
     pre_build:
         commands:
