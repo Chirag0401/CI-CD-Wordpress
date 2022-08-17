@@ -9,7 +9,7 @@ hooks:
     - location: Scripts/stopserver.sh
       timeout: 50
   AfterInstall:
-    - location: Scripts/permission.sh
+    - location: Scripts/permissions.sh
   ApplicationStart:
     - location: Scripts/startserver.sh
       timeout: 50
