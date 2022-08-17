@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+    - source: /
+      destination: /var/www/wordpress/
+
+hooks:
+  ApplicationStop:
+    - location: Scripts/stopserver.sh
+      timeout: 50
+  AfterInstall:
+    - location: Scripts/permission.sh
+  ApplicationStart:
+    - location: Scripts/startserver.sh
+      timeout: 50
